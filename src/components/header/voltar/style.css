@@ -1,0 +1,10 @@
+.voltar ul{
+    list-style-type: none;
+    background-color: brown;
+    padding: 7px 10px;
+    color: white;
+}
+.voltar a{
+    text-decoration: none;
+    color: white;
+}

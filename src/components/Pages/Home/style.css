@@ -5,6 +5,11 @@
 .home-card{
     width: 40%;
 }
+.home-link{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
 .home-card img{
     width: 100%;
     height: 23vh;

@@ -1,10 +1,12 @@
-import Navbar from "../../header/Navbar";
+import Voltar from "../../header/voltar";
 
 // import "./style.css"
 
 export default function Vermais(){
     return(
         <div>
+            <Voltar/>
+
             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1" alt="" />
             
             <h1>Titulo</h1>

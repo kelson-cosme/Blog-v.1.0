@@ -36,6 +36,15 @@ export default function Home(){
             alert(err.message);
         }
     }
+
+
+    function deletePost(id) {
+        axios.delete(`http://localhost:5500/api/${id}`)
+
+        // setPosts(posts.filter(post => post.id !== id));
+ 
+    }
+
     return(
         <div>
 
@@ -51,11 +60,11 @@ export default function Home(){
         
                                 <p> {post.avatar}</p>
                             </Link>
-                                                                                                                
+
                             <ul className="home-funcoes">
                                 <Link to={{pathname: `/editar/${post.id}`}}><li className="blue">Edite</li></Link>  
                                 <Link to={"/vermais"}><li className="green">Ler mais</li></Link>
-                                <li className="red">Delete</li>
+                                <li onClick={() => deletePost(post.id)} className="red">Delete</li>
                             </ul>
                         </div> 
                 ))}

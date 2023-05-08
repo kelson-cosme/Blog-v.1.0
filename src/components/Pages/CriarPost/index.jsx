@@ -37,16 +37,6 @@ export default function Newpost(){
     })
 
 
-    //  const addPost = "http://localhost:5500/api";
-    
-    // axios.get(addPost)
-    // .then(response => {
-    //     const data = JSON.stringify(response.data);
-    //     console.log(response.data)
-    // })
-    // .catch(error => console.log(error));
-
-
 
     return(
         <>

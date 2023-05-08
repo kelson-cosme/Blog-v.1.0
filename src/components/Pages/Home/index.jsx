@@ -25,7 +25,7 @@ export default function Home(){
  
     useEffect (() => {//redenrizar após atualizar o post
         getPosts();
-    })
+    },[]) //para que seja executada uma vez
 
     const getPosts = async () => {
         try{
@@ -43,14 +43,20 @@ export default function Home(){
 
             <div className="home-corpo">
                 {loading && 
-                    posts.map((post) =>(
-                        <div id={post.id} className="home-card" >
+                    posts.map((post, key) =>(
+                        <div id={post.id} key={key} className="home-card" >
                             <Link className="home-link" to={"/vermais"}>
                                 <img src={post.avatar} alt="" />
                                 <h2>{post.name}</h2>
         
                                 <p> {post.avatar}</p>
                             </Link>
+                                                                                                                
+                            <ul className="home-funcoes">
+                                <Link to={{pathname: `/editar/${post.id}`}}><li className="blue">Edite</li></Link>  
+                                <Link to={"/vermais"}><li className="green">Ler mais</li></Link>
+                                <li className="red">Delete</li>
+                            </ul>
                         </div> 
                 ))}
                         

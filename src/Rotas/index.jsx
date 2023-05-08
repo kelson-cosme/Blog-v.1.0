@@ -3,6 +3,7 @@ import {Route,Routes,BrowserRouter} from "react-router-dom"
 import Home from "../components/Pages/Home";
 import Criarpost from "../components/Pages/CriarPost";
 import Vermais from "../components/Pages/VerMais";
+import Editar from "../components/Pages/Editar"
 
 
 export default function AplicationRoutes(){
@@ -15,6 +16,7 @@ export default function AplicationRoutes(){
 
                 <Route path="/vermais" element= {<Vermais/>}/>
 
+                <Route path="/editar/:id" element= {<Editar/>}/> 
 
             </Routes>
         </BrowserRouter>

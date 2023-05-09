@@ -1,0 +1,18 @@
+.verMais{
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+}
+.verMais h1{
+    color: #222222;
+}
+.verMais p{
+    color: #505050;
+}
+.verMais img{
+    width: 100%;
+    margin: 20px 0;
+}
+.conteudo{
+    text-align: justify;
+}

@@ -3,8 +3,10 @@
     margin: 0;
 }
 .navBar{
-    background-color: brown;
+    background-color: #fff;
     padding: 7px 10px;
+    border-bottom: 1px solid #2222221e;
+    border-radius: 1%;
 }
 .navBar ul{
     list-style-type: none;
@@ -12,10 +14,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #222222;
 
 }
 .links{
     text-decoration: none;
-    color: white;
+    color: #222222;
+
+
 }

@@ -1,4 +1,5 @@
 import Navbar from "../../header/Navbar";
+import Rodape from "../../footer"
 import { Link } from "react-router-dom";
 import axios from "axios";
 import React, {useState, useEffect} from "react";
@@ -9,7 +10,9 @@ export default function Home(){
 
     const [posts, setPosts] = useState([]) //valor após o post ser publicado
     const [loading, setLoading] = useState(false)
- 
+
+    let postsReverse = posts.slice(0).reverse();
+
     useEffect ((post) => {//redenrizar após atualizar o post
         getPosts();
     },[]) //para que seja executada uma vez
@@ -35,14 +38,12 @@ export default function Home(){
 
     return(
         <div>
-
             <Navbar/>
-
             <div className="home-corpo">
                 {loading && 
-                    posts.map((post, key) =>(
+                    postsReverse.map((post, key) =>(
                         <div id={post.id} key={key} className="home-card" >
-                            <Link className="home-link" to={"/vermais"}>
+                            <Link className="home-link" to={{pathname: `/vermais/${post.id}`}}>
                                 <img src={post.avatar} alt="" />
                                 <h2>{post.name}</h2>
         

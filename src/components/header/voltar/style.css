@@ -1,10 +1,9 @@
 .voltar ul{
     list-style-type: none;
-    background-color: brown;
-    padding: 7px 10px;
-    color: white;
+    padding: 17px 10px;
+    color: #222222;
 }
 .voltar a{
     text-decoration: none;
-    color: white;
+    color: #222222;
 }

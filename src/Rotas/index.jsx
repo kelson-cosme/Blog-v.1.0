@@ -14,9 +14,9 @@ export default function AplicationRoutes(){
 
                 <Route path="/new" element= {<Criarpost/>}/>
 
-                <Route path="/vermais" element= {<Vermais/>}/>
+                <Route path="/vermais/:id" element= {<Vermais/>}/>
 
-                <Route path="/editar/:id" element= {<Editar/>}/> 
+                <Route path="/editar/:id" element= {<Editar/>}/>  
 
             </Routes>
         </BrowserRouter>

@@ -32,7 +32,7 @@ export default function Edit(){
         axios.get(`http://localhost:5500/api/${id}`) 
         .then((response) => { //pegando os valores dos imputs
             reset(response.data)
-            console.log(response.data)
+            // console.log(response.data)
         })
     }, [])
     
@@ -52,7 +52,6 @@ export default function Edit(){
 
             <div className="card-post">
                 <h1>Criar Post</h1>
-
                 <div className="line-post"></div>
 
                 <div className="card-body-posst">

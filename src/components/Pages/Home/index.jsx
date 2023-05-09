@@ -7,23 +7,10 @@ import "./style.css"
 
 export default function Home(){
 
-    // let [posts, setPosts ] = useState([]);
-
-    // useEffect(() => { 
-    //     axios.get("http://localhost:5500/api")
-    //     .then(response => { //reponse.data para pegar os arrays da api
-    //         setPosts(response.data.users) //guardando o registro da api
-    //         // console.log(response.data.users)
-    //     })
-    //     .catch(() => {
-    //         console.log("deu errado")
-    //     })
-    // }, [])
-
     const [posts, setPosts] = useState([]) //valor após o post ser publicado
     const [loading, setLoading] = useState(false)
  
-    useEffect (() => {//redenrizar após atualizar o post
+    useEffect ((post) => {//redenrizar após atualizar o post
         getPosts();
     },[]) //para que seja executada uma vez
 
@@ -41,7 +28,8 @@ export default function Home(){
     function deletePost(id) {
         axios.delete(`http://localhost:5500/api/${id}`)
 
-        // setPosts(posts.filter(post => post.id !== id));
+        setPosts(posts.filter(post => post.id !== id));
+        console.log(id)
  
     }
 
@@ -63,7 +51,7 @@ export default function Home(){
 
                             <ul className="home-funcoes">
                                 <Link to={{pathname: `/editar/${post.id}`}}><li className="blue">Edite</li></Link>  
-                                <Link to={"/vermais"}><li className="green">Ler mais</li></Link>
+                                <Link to={{pathname: `/vermais/${post.id}`}}><li className="green">Ler mais</li></Link>
                                 <li onClick={() => deletePost(post.id)} className="red">Delete</li>
                             </ul>
                         </div> 

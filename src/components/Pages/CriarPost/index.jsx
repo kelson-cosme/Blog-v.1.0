@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 import Voltar from "../../header/voltar";
+import EditorConteudo from "../../EditarConteudo";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup'; //importando biblioteca de validação de imput
 import * as yup from "yup";
@@ -37,15 +38,16 @@ export default function Newpost(){
     })
 
 
-
     return(
+        
         <>
             <Voltar/>
 
-            
+
             <div className="btn-post">
                 <button onClick={handleSubmit(addPost)} type="submit">Enviar</button>
-                </div>
+            </div>
+
             <div className="criarPost-area">
 
                 <div className="titulo">
@@ -59,6 +61,7 @@ export default function Newpost(){
                     <p className="error-message"> {errors.description?.message} </p>
                 </div>
 
+                <EditorConteudo/>
 
                 <div className="card-post">
                         <div className="card-body-posst">

@@ -28,7 +28,7 @@ conteudoPost = document.getElementById("conteudo-post")
       })
   }, []);
 
-  let quebraLinha = postagem && postagem.content.replace(/\r?\n/g , '<br/>')
+  let quebraLinha = postagem && postagem.content.replace(/\r?\n/g , '<br/>') //verificacao para adicionar a quebra de linha no texto
     if(quebraLinha != undefined && conteudoPost != undefined){
       conteudoPost.innerHTML = quebraLinha
     }

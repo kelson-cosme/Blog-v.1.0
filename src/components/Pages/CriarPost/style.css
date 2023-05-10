@@ -1,15 +1,21 @@
+h1{
+    color: #222222;
+
+}
+.criarPost-area{
+    background-color: #F5F5F5;
+}
 main {
     display: flex;
     justify-content: center;
-
-
     padding: 3rem 0;
 }
 
 .card-post {
     margin: auto;
-    width: 400px;
-    background-color: #2F3644;
+    max-width: 70%;
+    
+    /* background-color: #F5F5F5; */
     padding: 30px 70px;
     border-radius: 15px;
 }
@@ -19,8 +25,6 @@ main {
     font-weight: 800;
     text-align: center;
 
-    color: #D2DAF5;
-
     font-size: 3rem;
     margin-bottom: 5px;
 }
@@ -29,7 +33,10 @@ main {
     height: 2px;
     background-color: #3E445B;
 }
-
+.titulo{
+    background-color: #fff;
+    border-bottom: solid 1px black;
+}
 .card-body-post {
     margin-top: 25px;
 
@@ -44,7 +51,7 @@ label {
     margin-bottom: 7px;
     font-size: 1.2rem;
 
-    color: #D2DAF5;
+    color: #222222;
 
     font-family: Poppins;
 }
@@ -65,7 +72,7 @@ input {
 }
 
 textarea {
-    height: 190px;
+    height: 100vh;
     resize: none;
 
     padding-top: 10px;

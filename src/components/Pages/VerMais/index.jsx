@@ -8,8 +8,12 @@ import { useParams} from "react-router-dom";
 import "./style.css"
 
 let postagem; //os posts
+let conteudoPost;
 
 export default function Vermais(){
+
+conteudoPost = document.getElementById("conteudo-post")
+
 
   const { id } = useParams(); //pegar os ids dos posts
 
@@ -24,7 +28,10 @@ export default function Vermais(){
       })
   }, []);
 
-   
+  let quebraLinha = postagem && postagem.content.replace(/\r?\n/g , '<br/>')
+    if(quebraLinha != undefined && conteudoPost != undefined){
+      conteudoPost.innerHTML = quebraLinha
+    }
 
   return(
     <>
@@ -32,16 +39,16 @@ export default function Vermais(){
 
        <div className="verMais">
           <h1>
-            {postagem && postagem.name}
+            {postagem && postagem.title}
           </h1>
           
           <p>
-            {postagem && postagem.city}
+            {postagem && postagem.description}
           </p>
 
-          <img src={postagem && postagem.avatar} alt="" />
+          <img src={postagem && postagem.description} alt="" />
 
-          <p className="conteudo">{postagem && postagem.avatar}</p>
+          <p id="conteudo-post"></p>
         </div>
     </>
 );

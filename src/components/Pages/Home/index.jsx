@@ -44,10 +44,10 @@ export default function Home(){
                     postsReverse.map((post, key) =>(
                         <div id={post.id} key={key} className="home-card" >
                             <Link className="home-link" to={{pathname: `/vermais/${post.id}`}}>
-                                <img src={post.avatar} alt="" />
-                                <h2>{post.name}</h2>
+                                <img src={post.description} alt="" />
+                                <h2>{post.title}</h2>
         
-                                <p> {post.avatar}</p>
+                                <p> {post.description}</p>
                             </Link>
 
                             <ul className="home-funcoes">

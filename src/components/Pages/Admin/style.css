@@ -1,0 +1,39 @@
+.admin-card{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+.admin-card h2{
+    color: #222222;
+}
+.admin-card a p{
+    color: #505050;
+}
+.admin-link{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.admin-link div{
+    padding: 10px 20px;
+}
+.admin-link img{
+    width: 150px;
+    border-radius: 7px;
+
+}
+
+.admin-funcoes{
+    margin: 20px 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.admin-funcoes li{
+    padding: 6px 22px;
+    border-radius: 5px;
+}
+.admin-funcoes a{
+    text-decoration: none;
+    color: #ffff;
+}

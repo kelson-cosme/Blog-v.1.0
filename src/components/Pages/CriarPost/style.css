@@ -81,7 +81,9 @@ textarea {
 .btn-post{
     margin-top: 30px;
     text-align: center;
-
+    position: fixed;
+    right: 0;
+    top: 10px;
 }
 
 .btn-post button{
@@ -90,6 +92,7 @@ textarea {
     font-size: 1.3rem;
 
     padding: 5px 50px;
+    margin: 0 50px;
     color: #fff;
     background-color: #3DECB1;
 

@@ -46,8 +46,9 @@ conteudoPost = document.getElementById("conteudo-post")
             {postagem && postagem.description}
           </p>
 
-          <img src={postagem && postagem.description} alt="" />
+          <img src={postagem && postagem.img} alt="" />
 
+          {console.log(postagem && postagem)}
           <p id="conteudo-post"></p>
         </div>
     </>

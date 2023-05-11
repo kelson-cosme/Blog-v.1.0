@@ -1,11 +1,11 @@
-import Navbar from "../../header/Navbar";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import React, {useState, useEffect} from "react";
+import Voltar from "../../header/voltar";
 
 import "./style.css"
 
-export default function Home(){
+export default function Admin(){
 
     const [posts, setPosts] = useState([]) //valor após o post ser publicado
     const [loading, setLoading] = useState(false)
@@ -37,23 +37,27 @@ export default function Home(){
 
     return(
         <div>
-            <Navbar/>
-            <div className="home-corpo">
+            <Voltar/>
+            <div className="admin-corpo">
                 {loading && 
                     postsReverse.map((post, key) =>(
-                        <div id={post.id} key={key} className="home-card" >
-                            <Link className="home-link" to={{pathname: `/vermais/${post.id}`}}>
+                        <div id={post.id} key={key} className="admin-card" >
+                            <div className="admin-link" to={{pathname: `/vermais/${post.id}`}}>
                                 <img src={post.img} alt="" />
-                                <h2>{post.title}</h2>
-        
-                                <p> {post.description}</p>
-                            </Link>
 
-                            {/* <ul className="home-funcoes">
+                                <div>
+                                    <h2>{post.title}</h2>
+                                    <p> {post.description}</p>
+                                </div>
+                                
+                                
+                            </div>
+
+                            <ul className="admin-funcoes">
                                 <Link to={{pathname: `/editar/${post.id}`}}><li className="blue">Edite</li></Link>  
                                 <Link to={{pathname: `/vermais/${post.id}`}}><li className="green">Ler mais</li></Link>
                                 <li onClick={() => deletePost(post.id)} className="red">Delete</li>
-                            </ul> */}
+                            </ul>
                         </div> 
                 ))}
                         

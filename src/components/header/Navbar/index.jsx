@@ -8,8 +8,8 @@ export default function Cabecario(){
             <ul>
                 <li><h2>LOGO</h2></li>
 
-                <Link className="links" to={"/new"}>
-                    <li><h2>Criar novo post</h2></li>
+                <Link className="links" to={"/admin"}>
+                    <li><h2>Login Admin</h2></li>
                 </Link>
 
             </ul>

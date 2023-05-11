@@ -106,3 +106,7 @@ textarea {
 .error-message {
     color: rgb(240, 47, 47);
 }
+
+.testee{
+    color: red;
+}

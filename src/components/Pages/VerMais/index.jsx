@@ -12,8 +12,8 @@ let conteudoPost;
 
 export default function Vermais(){
 
-conteudoPost = document.getElementById("conteudo-post")
 
+  conteudoPost = document.getElementById("conteudo-post")
 
   const { id } = useParams(); //pegar os ids dos posts
 
@@ -25,7 +25,8 @@ conteudoPost = document.getElementById("conteudo-post")
       .then((response) => { //pegando os valores dos imputs
           reset(response.data)
           postagem = response.data 
-      })
+          console.log(postagem)
+        })
   }, []);
 
   let quebraLinha = postagem && postagem.content.replace(/\r?\n/g , '<br/>') //verificacao para adicionar a quebra de linha no texto
@@ -34,6 +35,7 @@ conteudoPost = document.getElementById("conteudo-post")
     }
 
   return(
+    
     <>
         <Voltar/>
 
@@ -48,7 +50,6 @@ conteudoPost = document.getElementById("conteudo-post")
 
           <img src={postagem && postagem.img} alt="" />
 
-          {console.log(postagem && postagem)}
           <p id="conteudo-post"></p>
         </div>
     </>

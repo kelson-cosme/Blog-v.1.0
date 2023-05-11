@@ -9,7 +9,7 @@ export default function Cabecario(){
                 <li><h2>LOGO</h2></li>
 
                 <Link className="links" to={"/admin"}>
-                    <li><h2>Login Admin</h2></li>
+                    <li className="loginAdmin"><h2>Login Admin</h2></li>
                 </Link>
 
             </ul>

@@ -1,10 +1,10 @@
+
 import React from "react";
 import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 
 import Voltar from "../../header/voltar";
-import EditorConteudo from "../../EditarConteudo";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup'; //importando biblioteca de validação de imput
 import * as yup from "yup";
@@ -20,6 +20,7 @@ const validacaoPost = yup.object().shape({ //validação de caracteres
 })
 
 export default function Newpost(){
+
 
     let navigate = useNavigate() //voltou para tela inicial ao incluir um post
 
@@ -65,8 +66,6 @@ export default function Newpost(){
                     <input placeholder="Endereço da imagem" type="text" name="img" {...register("img")} />
                 </div>
 
-                <EditorConteudo/>
-
                 <div className="card-post">
                         <div className="card-body-posst">
 
@@ -75,9 +74,8 @@ export default function Newpost(){
                                 <div className="fields">
                                     <label>Conteudo</label>
                                     <p className="error-message"> {errors.content?.message} </p>
-                                    <textarea type="text" name="content" {...register("content")} > </textarea>
+                                    <textarea id="conteudo" type="text" name="content" {...register("content")} > </textarea>
                                 </div>
-                                {/* {console.log(register)} */}
                             </form>
                         </div>
                     </div>

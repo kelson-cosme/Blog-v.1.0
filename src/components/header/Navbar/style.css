@@ -4,7 +4,7 @@
 }
 .navBar{
     background-color: #fff;
-    padding: 7px 10px;
+    padding: 0px 10px;
     border-bottom: 1px solid #2222221e;
     border-radius: 1%;
 }
@@ -19,7 +19,13 @@
 }
 .links{
     text-decoration: none;
-    color: #222222;
+    color: #ffff;
+    background-color: #222222;
+    padding: 8px 20px;
+    border-radius: 5px;
 
-
+    transition: .2s;
+}
+.links:hover{
+    box-shadow: 0px 0px 10px black
 }

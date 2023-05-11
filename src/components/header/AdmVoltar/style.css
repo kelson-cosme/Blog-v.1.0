@@ -1,0 +1,30 @@
+.VoltarAdm{
+    padding: 2px 0;
+}
+.VoltarAdm ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style-type: none;
+}
+.criar{
+    transition: .2s;
+}
+.criar:hover{
+    box-shadow: 3px 3px 9px #505050;
+    border-radius: 20px;
+    background-color: #3DECB1;
+    color: #ffff;
+}
+.VoltarAdm ul a{
+    text-decoration: none;
+
+}
+.VoltarAdm ul h2{
+    color: #222222;
+    padding: 10px 20px;
+}
+.VoltarAdm ul h2:hover{
+    color: #ffff;
+}

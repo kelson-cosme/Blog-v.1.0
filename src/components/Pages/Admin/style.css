@@ -3,6 +3,15 @@
     justify-content: space-between;
     width: 70%;
     margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+.admin-card:hover{
+    box-shadow: 3px 3px 9px #505050;
+
 }
 .admin-card h2{
     color: #222222;
@@ -32,8 +41,13 @@
 .admin-funcoes li{
     padding: 6px 22px;
     border-radius: 5px;
+    margin: 6px 0;
 }
 .admin-funcoes a{
     text-decoration: none;
     color: #ffff;
+}
+.admin-funcoes li{
+    color: #ffff;
+
 }

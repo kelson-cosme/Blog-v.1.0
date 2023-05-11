@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
 import React, {useState, useEffect} from "react";
-import Voltar from "../../header/voltar";
+import Voltar from "../../header/AdmVoltar";
 
 import "./style.css"
 

@@ -18,21 +18,12 @@ export default function Home(){
 
     const getPosts = async () => {
         try{
-            const res = await axios.get("http://localhost:5500/api")// pegar os dados da api
+            const res = await axios.get("https://api-blogtest-production.up.railway.app/api")// pegar os dados da api
             setPosts(res.data.users) //qual os dados serão armazenados
             setLoading(true)
         } catch (err){
             alert(err.message);
         }
-    }
-
-
-    function deletePost(id) {
-        axios.delete(`http://localhost:5500/api/${id}`)
-
-        setPosts(posts.filter(post => post.id !== id));
-        console.log(id)
- 
     }
 
     return(

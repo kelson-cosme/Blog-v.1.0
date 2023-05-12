@@ -21,7 +21,6 @@ export default function AplicationRoutes(){
 
                 <Route path="/editar/:id" element= {<Editar/>}/>  
 
-
             </Routes>
         </BrowserRouter>
     );

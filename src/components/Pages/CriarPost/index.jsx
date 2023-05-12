@@ -29,7 +29,7 @@ export default function Newpost(){
     }); 
    
     
-    const addPost = data => axios.post("http://localhost:5500/api", data)
+    const addPost = data => axios.post("https://api-blogtest-production.up.railway.app/api", data)
     .then((response) => {
         alert("Seu post foi publicado")
         navigate('/')  //voltou para tela inicial ao incluir um post

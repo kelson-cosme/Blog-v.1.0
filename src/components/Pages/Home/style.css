@@ -55,3 +55,18 @@
     cursor: pointer;
 }
 /*  */
+
+@media screen and (max-width: 768px){ 
+
+    .home-corpo{
+        flex-direction: column;
+        width: 100%;
+    }
+    .home-card{
+        padding: 0;
+        margin: 18px;
+        
+        width: calc(100% - 36px);
+    }
+    
+}

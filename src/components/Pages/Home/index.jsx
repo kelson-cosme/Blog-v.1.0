@@ -27,7 +27,7 @@ export default function Home(){
     }
 
     return(
-        <div>
+        <div className="home-corpo-pai">
             <Navbar/>
             <div className="home-corpo">
                 {loading && 

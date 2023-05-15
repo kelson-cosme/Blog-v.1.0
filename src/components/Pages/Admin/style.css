@@ -51,3 +51,24 @@
     color: #ffff;
 
 }
+
+@media screen and (max-width: 768px){ 
+   .admin-corpo{
+        width: calc(100% - 52px);
+        margin: 18px;
+    }
+   .admin-card{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        margin: 0;
+   }
+ 
+   .admin-link img{
+    width: 30%;
+   }
+   .admin-funcoes{
+        margin-bottom: 0px;
+        text-align: center;
+   }
+}

@@ -19,3 +19,14 @@
 #conteudo-post{
     text-align: left;
 }
+
+@media screen and (max-width: 768px){ 
+
+    .verMais{
+        max-width: 100%;
+        margin: 18px;
+    }
+    #conteudo-post{
+        text-align: justify;
+    }
+  }

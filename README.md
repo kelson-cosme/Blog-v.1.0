@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+## 💻 About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O Projeto Blog é uma aplicação Web como objetivo mostrar visualmente com um design e layout clean, podendo fazer novas postagem, editar e excluir.
 
-## Available Scripts
+O principal conceito treinado nesta aplicação foi a utilização de API em projetos React, no caso, a API da Jakeliny Gracielly
 
-In the project directory, you can run:
+O projeto foi desenvolvido com o intuito de colocar em pratica os conhecimentos em ReactJs e consumo de API.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚙️ Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - [x] Criar novo Post
+  - [x] Editar os Posts
+  - [x] Excluir os Posts
+  
+---
 
-### `npm test`
+## 🔗 Deploy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para acessar o deploy do Website da aplicação basta clicar no link a seguir: [Link](https://blog1-0-eight.vercel.app/)
 
-### `npm run build`
+## 🚀 How it works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este projeto contem somente a parte Frontend Web, precisando somente executar a aplicação em seu Browser(navegador).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Antes de baixar o projeto você vai precisar ter instalado na sua máquina as seguintes ferramentas:
 
-### `npm run eject`
+* [Git](https://git-scm.com)
+* [NodeJS](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para acessar o repositório da API: [Link](https://github.com/kelson-cosme/api-Blogtest)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para acessar o deploy da API: [Link](https://api-blogtest-production.up.railway.app/api)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠 Technologies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As seguintes ferramentas foram usadas na construção do projeto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   **[Styled-Components](https://tailwindcss.com/)**
+-   **[React Roter Dom](https://reactrouter.com/en/v6.3.0)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[React Hook Form](https://github.com/axios/axios)**
+-   **[@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)**
 
-### Code Splitting
+---
+## 🦸 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<a href="https://github.com/kelson-cosme">
+ <img alt="Kelson-Cosme" title="Kelson-Cosme" src="https://github.com/kelson-cosme.png" width="100px" />
+ <br />
+ <sub><strong>Kelson Cosme</strong> 🚀</sub>
+</a>
 
-### Analyzing the Bundle Size
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[![Linkedin Badge](https://img.shields.io/badge/-Kelson_Cosme-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pabloalan/)](https://www.linkedin.com/in/kelson-cosme/) 
+[![Gmail Badge](https://img.shields.io/badge/-kelson.almeida123@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kelson.almeida123@gmail.com)](mailto:kelson.almeida123@gmail.com)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -18,7 +18,7 @@ export default function Admin(){
 
     const getPosts = async () => {
         try{
-            const res = await axios.get("https://api-blogtest-production.up.railway.app/api")// pegar os dados da api
+            const res = await axios.get("https://api-phmz.vercel.app/api")// pegar os dados da api
             setPosts(res.data.users) //qual os dados serão armazenados
             setLoading(true)
         } catch (err){
@@ -28,7 +28,7 @@ export default function Admin(){
 
 
     function deletePost(id) {
-        axios.delete(`https://api-blogtest-production.up.railway.app/api/${id}`)
+        axios.delete(`https://api-phmz.vercel.app/api/${id}`)
 
         setPosts(posts.filter(post => post.id !== id));
         console.log(id)

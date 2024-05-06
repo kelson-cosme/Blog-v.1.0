@@ -21,7 +21,7 @@ export default function Vermais(){
 
 
   useEffect(() => {
-      axios.get(`https://api-blogtest-production.up.railway.app/api/${id}`) 
+      axios.get(`https://api-phmz.vercel.app/api/${id}`) 
       .then((response) => { //pegando os valores dos imputs
           reset(response.data)
           postagem = response.data 

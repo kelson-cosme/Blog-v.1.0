@@ -29,14 +29,14 @@ export default function Edit(){
     });
 
     useEffect(() => {
-        axios.get(`https://api-blogtest-production.up.railway.app/api/${id}`) 
+        axios.get(`https://api-phmz.vercel.app/api/${id}`) 
         .then((response) => { //pegando os valores dos imputs
             reset(response.data)
             // console.log(response.data)
         })
     }, []);
     
-    const addPost = data => axios.put(`https://api-blogtest-production.up.railway.app/api/${id}`, data) //put serve para editar o post 
+    const addPost = data => axios.put(`https://api-phmz.vercel.app/api/${id}`, data) //put serve para editar o post 
     .then((response) => {
         alert("Seu post foi editado")
         navigate('/')  //voltou para tela inicial ao incluir um post
